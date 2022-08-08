@@ -20,7 +20,7 @@ const CoinList = ({ coinData }) => {
 
 
 export const getStaticProps = async ({ params }) => {
-  const id = params.id
+
   const data = await Axios.get(
     "https://api.coinstats.app/public/v1/coins?skip=0"
   );
